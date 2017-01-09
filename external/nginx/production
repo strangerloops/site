@@ -13,11 +13,11 @@ server {
   listen 443 ssl;
   server_name 52.43.106.40 michaelhassin.com www.michaelhassin.com;
   add_header Strict-Transport-Security "max-age=31536000";
-  ssl_certificate /etc/letsencrypt/live/site/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/site/privkey.pem;
-  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-  ssl_prefer_server_ciphers on;
-  ssl_ciphers 'EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:AES256+ECDHE';
+  # ssl_certificate /etc/letsencrypt/live/site/fullchain.pem;
+  # ssl_certificate_key /etc/letsencrypt/live/site/privkey.pem;
+  # ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+  # ssl_prefer_server_ciphers on;
+  # ssl_ciphers 'EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:AES256+ECDHE';
 
   root /home/ubuntu/apps/site/current/public;
 
