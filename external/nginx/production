@@ -4,15 +4,15 @@ upstream app {
 
 server {
   listen 80;
-  server_name michaelhassin.com www.michaelhassin.com;
-  return 301 https://$server_name$request_uri;
-}
+  server_name 54.202.151.91 michaelhassin.com www.michaelhassin.com;
+  # return 301 https://$server_name$request_uri;
+# }
 
-server {
+# server {
 
-  listen 443 ssl;
-  server_name 52.43.106.40 michaelhassin.com www.michaelhassin.com;
-  add_header Strict-Transport-Security "max-age=31536000";
+#   listen 443 ssl;
+#   server_name 54.202.151.91 michaelhassin.com www.michaelhassin.com;
+  # add_header Strict-Transport-Security "max-age=31536000";
   # ssl_certificate /etc/letsencrypt/live/site/fullchain.pem;
   # ssl_certificate_key /etc/letsencrypt/live/site/privkey.pem;
   # ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
